@@ -5,8 +5,13 @@ namespace HangmanGameConsole
 {
     internal class Program
     {
-        string[] words = { "animal", "bread", "peach", "shopping", "sugar", "movie", "telephone", "facebook", "system", "science", "tiktok", "drink", "avocado", "chicken", "pizza", "chocolate", "yogurt", "cheese", "penguin", "project"};
+        string[] words = { "animal", "bread", "peach", "shopping", "sugar", "movie", "telephone", "facebook", "system", "science", "tiktok", "drink", "avocado", "chicken", "pizza", "chocolate", "yogurt", "cheese", "penguin", "project" };
 
+        Random random = new Random();   
+        
+
+            
+            
          
         static void Main(string[] args)
         {
@@ -25,6 +30,9 @@ namespace HangmanGameConsole
             Console.SetCursorPosition(20, 25);
             Console.WriteLine("Thank you for playing");
             Console.ReadLine();
-        }
+
+
+          
+        } 
     }
 }
