@@ -7,8 +7,7 @@ namespace Hangman.Core.Game
     {
         private GallowsRenderer _renderer;
 
-        string[] words = animal, bread, peach,shopping, sugar, movie, telephone, facebook, system, science, tiktok, drink, avocado, chicken,pizza, chocolate, yogurt, cheese, penguin,project;
-
+       
         public HangmanGame()
         {
             _renderer = new GallowsRenderer();

@@ -5,6 +5,9 @@ namespace HangmanGameConsole
 {
     internal class Program
     {
+        string[] words = { "animal", "bread", "peach", "shopping", "sugar", "movie", "telephone", "facebook", "system", "science", "tiktok", "drink", "avocado", "chicken", "pizza", "chocolate", "yogurt", "cheese", "penguin", "project"};
+
+         
         static void Main(string[] args)
         {
             ConsoleColor oldColor = Console.ForegroundColor;
