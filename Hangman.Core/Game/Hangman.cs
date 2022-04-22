@@ -25,10 +25,12 @@ namespace Hangman.Core.Game
             Random random = new Random();
             var index = random.Next(0, 19);
 
-            string GuessedWords = words[index];
+            string SecretWords = words[index];
 
 
-            char[] guess = GuessedWords.ToCharArray();
+            char[] guess = SecretWords.ToCharArray();
+
+              
 
             _lives = 6;
 
@@ -92,7 +94,7 @@ namespace Hangman.Core.Game
 
                 Console.SetCursorPosition(2, 22);
 
-                if (_guessProgress == GuessedWords)
+                if (_guessProgress == SecretWords)
                 {
                     Console.WriteLine("you survive!!!");
                 }
