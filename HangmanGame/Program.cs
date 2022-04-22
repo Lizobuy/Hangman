@@ -9,8 +9,7 @@ namespace HangmanGameConsole
                                      
                    
         static void Main(string[] args)
-              
-                                
+                                        
         {
             ConsoleColor oldColor = Console.ForegroundColor;
 
@@ -19,21 +18,17 @@ namespace HangmanGameConsole
             Console.Write("Welcome to Hangman!!");
 
             var hangman = new HangmanGame();
+           
             hangman.Run();
 
             Console.ForegroundColor = oldColor;
 
-        
-
-               
-        {
-              Console.WriteLine("Please enter next guess: ");
-              string guess = Console.ReadLine();
-
+                                  
+         
               Console.SetCursorPosition(20, 25);
               Console.WriteLine("Thank you for playing");
               Console.ReadLine();
-        }
+        
           
           
 
