@@ -32,7 +32,6 @@ namespace Hangman.Core.Game
 
             _lives = 6;
 
-
             _renderer.Render(5, 5, 6);
 
             Console.SetCursorPosition(0, 15);
@@ -47,7 +46,7 @@ namespace Hangman.Core.Game
 
 
 
-            for(int i = 0; i < guess.Length; i++)
+            for (int i = 0; i < guess.Length; i++)
 
             {
                 _guessProgress += "*";
@@ -65,7 +64,7 @@ namespace Hangman.Core.Game
 
 
                 char[] guessProgressArray = _guessProgress.ToCharArray();
-                
+
 
                 bool correct = false;
 
@@ -91,24 +90,22 @@ namespace Hangman.Core.Game
 
                 }
 
-            }
+                Console.SetCursorPosition(2, 22);
 
-             Console.SetCursorPosition(2, 22);
+                if (_guessProgress == GuessedWords)
+                {
+                    Console.WriteLine("you survive!!!");
+                }
+                else if (_lives == 0)
+                {
+                    Console.WriteLine("you died!!!");
+                    Console.WriteLine(guess);
 
-            if (_lives > 0)
-            {
-                Console.WriteLine("you survived.");
-            }
-            else
-            {
-                Console.WriteLine("you died.");
-                Console.WriteLine(guess);
+                }
 
             }
 
         }
-
-
-
+        
     }
 }
